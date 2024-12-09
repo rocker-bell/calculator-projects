@@ -16,73 +16,78 @@
             <p class="text-black ">0</p>
         </div>
         <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary ">
+            <div class="container text-center  bg-secondary " id="btn">
                 <p class="text-white">7</p>
             </div>
-            <div class="container text-center  bg-secondary">
+            <div class="container text-center  bg-secondary" id="btn">
                <p class="text-white">8</p>
             </div>
-            <div class="container text-center bg-secondary">
+            <div class="container text-center bg-secondary" id="btn">
                 <p class="text-white">9</p>
             </div>
-            <div class="container text-center bg-primary">
+            <div class="container text-center bg-primary" id="btn">
                 <p class="text-white">+</p>
             </div>
         </div>
 
         <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary ">
+            <div class="container text-center  bg-secondary " id="btn">
                 <p class="text-white">4</p>
             </div>
-            <div class="container text-center  bg-secondary">
+            <div class="container text-center  bg-secondary" id="btn">
                <p class="text-white">5</p>
             </div>
-            <div class="container text-center bg-secondary">
+            <div class="container text-center bg-secondary" id="btn">
                 <p class="text-white">5</p>
             </div>
-            <div class="container text-center bg-primary">
+            <div class="container text-center bg-primary" id="btn">
                 <p class="text-white">-</p>
             </div>
         </div>
 
         <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary ">
+            <div class="container text-center  bg-secondary " id="btn">
                 <p class="text-white">1</p>
             </div>
-            <div class="container text-center  bg-secondary">
+            <div class="container text-center  bg-secondary" id="btn">
                <p class="text-white">2</p>
             </div>
-            <div class="container text-center bg-secondary">
+            <div class="container text-center bg-secondary" id="btn">
                 <p class="text-white">3</p>
             </div>
-            <div class="container text-center bg-primary">
+            <div class="container text-center bg-primary" id="btn">
                 <p class="text-white">x</p>
             </div>
         </div>
 
         <div class="container d-flex flex-r mb-2 gap-4">
-            <div class="container text-center  bg-secondary ">
+            <div class="container text-center  bg-secondary " id="btn">
                 <p class="text-white">0</p>
             </div>
-            <div class="container text-center  bg-secondary">
+            <div class="container text-center  bg-secondary" id="btn">
                <p class="text-white">.</p>
             </div>
-            <div class="container text-center bg-danger">
+            <div class="container text-center bg-danger" id="btn">
                 <p class="text-white">AC</p>
             </div>
-            <div class="container text-center bg-primary">
+            <div class="container text-center bg-primary " id="btn">
                 <p class="text-white text-center">%</p>
             </div>
         </div>
 
-        <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary ">
+        <div class="container d-flex flex-row  mb-2 gap-4" >
+            <div class="container text-center  bg-secondary " id="btn">
                 <p>=</p>
             </div>
             
         </div>
+
+        <div class="results" style="display: flex; flex-wrap: wrap; flex-direction: column; width: 300px; height: 30px; border: 1px solid black; background-color: aqua; margin: 5px 5px;"></div>
         
     </div>
+
+
+
    
     
 
@@ -101,10 +106,11 @@
         width: 40vw;
         justify-content: center;
         align-content: center;
-        
-        
-        
- }
+
+}
+  #btn:hover {
+    transform: scale(0,7);
+  }
 </style>
 
 <script src="/calculator.js"></script>
