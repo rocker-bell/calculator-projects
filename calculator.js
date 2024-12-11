@@ -7,7 +7,14 @@ function Appendtodisplay(input) {
 
 
 function Calculate() {
-    display.value = eval(display.value)
+
+    try {
+        display.value = eval(display.value)
+    }
+    catch {
+        display.value = "ERROR"
+    }
+    
 }
 
 function ClearDisplay() {
