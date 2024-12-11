@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     
     <title>Document</title>
 </head>
@@ -13,76 +14,39 @@
     <div class=" wrapper container-lg d-flex flex-column">
         <legend class="text-center">Calculatrice</legend>
         <div class="container d-flex container-head justify-content-center align-content-center bg-secondary mb-2 float-start">
-            <p class="text-black ">0</p>
+            <input type="display" readonly id="display">
         </div>
         <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary " id="btn">
-                <p class="text-white">7</p>
-            </div>
-            <div class="container text-center  bg-secondary" id="btn">
-               <p class="text-white">8</p>
-            </div>
-            <div class="container text-center bg-secondary" id="btn">
-                <p class="text-white">9</p>
-            </div>
-            <div class="container text-center bg-primary" id="btn">
-                <p class="text-white">+</p>
-            </div>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">7</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">8</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">9</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">+</button>
         </div>
 
         <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary " id="btn">
-                <p class="text-white">4</p>
-            </div>
-            <div class="container text-center  bg-secondary" id="btn">
-               <p class="text-white">5</p>
-            </div>
-            <div class="container text-center bg-secondary" id="btn">
-                <p class="text-white">5</p>
-            </div>
-            <div class="container text-center bg-primary" id="btn">
-                <p class="text-white">-</p>
-            </div>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">4</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">5</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">6</button>
+            <button class="btn text-white operator-button" onclick="Appendtodisplay()">-</button>
         </div>
 
         <div class="container d-flex flex-row  mb-2 gap-4">
-            <div class="container text-center  bg-secondary " id="btn">
-                <p class="text-white">1</p>
-            </div>
-            <div class="container text-center  bg-secondary" id="btn">
-               <p class="text-white">2</p>
-            </div>
-            <div class="container text-center bg-secondary" id="btn">
-                <p class="text-white">3</p>
-            </div>
-            <div class="container text-center bg-primary" id="btn">
-                <p class="text-white">x</p>
-            </div>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">1</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">2</button>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">3</button>
+            <button class="btn text-white operator-button" onclick="Appendtodisplay()">x</button>
         </div>
 
         <div class="container d-flex flex-r mb-2 gap-4">
-            <div class="container text-center  bg-secondary " id="btn">
-                <p class="text-white">0</p>
-            </div>
-            <div class="container text-center  bg-secondary" id="btn">
-               <p class="text-white">.</p>
-            </div>
-            <div class="container text-center bg-danger" id="btn">
-                <p class="text-white">AC</p>
-            </div>
-            <div class="container text-center bg-primary " id="btn">
-                <p class="text-white text-center">%</p>
-            </div>
+            <button class="btn text-white number-button" onclick="Appendtodisplay()">0</button>
+            <button class="btn text-white operator-button" onclick="Appendtodisplay()">.</button>
+            <button class="btn text-white operator-button operator-button-ac" onclick="Appendtodisplay()">AC</button>
+            <button class="btn text-white operator-button" onclick="Appendtodisplay()">%</button>
         </div>
 
-        <div class="container d-flex flex-row  mb-2 gap-4" >
-            <div class="container text-center  bg-secondary " id="btn">
-                <p>=</p>
-            </div>
-            
-        </div>
+        <button class="btn text-white operator-button-equal" onclick="Appendtodisplay()">=</button>
 
-        <div class="results" style="display: flex; flex-wrap: wrap; flex-direction: column; width: 300px; height: 30px; border: 1px solid black; background-color: aqua; margin: 5px 5px;"></div>
+        
         
     </div>
 
@@ -95,22 +59,9 @@
 
 <style>
 
-    body {
-        justify-content: center;
-        align-content: center;
-    }
     
-    .wrapper {
-        border: 1px solid black;
-        display: flex;
-        width: 40vw;
-        justify-content: center;
-        align-content: center;
-
-}
-  #btn:hover {
-    transform: scale(0,7);
-  }
+    
+  
 </style>
 
 <script src="/calculator.js"></script>
